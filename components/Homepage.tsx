@@ -1,21 +1,27 @@
-"use client"
+"use client";
 import { motion } from 'framer-motion';
-import React from 'react'
+import React from 'react';
 
 const Homepage = () => {
     return (
         <div>
             <div className="flex justify-center items-center  pt-40">
                 <div className="relative flex items-center">
-                    <div className="car-image">
-                        <img src="img/skoda.png" alt="Car" className="max-w-full h-auto" />
-                    </div>
                     <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1.3 }}
-                    className="glass-panel flex flex-col gap-8 absolute top-1/4 -left-56 transform -translate-y-1/4 bg-white bg-opacity-20 rounded-2xl p-8 w-96 h-4/5 backdrop-blur-md shadow-lg text-gray-800">
+                        initial={{ x: 300, opacity: 0 }}  // Začína vpravo mimo obrazovku
+                        animate={{ x: 0, opacity: 1 }}   // Posunie sa do pozície
+                        transition={{ type: "spring", bounce: 0.3, duration: 1.2 }}  // Definovanie animácie
+                        className="car-image"
+                    >
+                        <img src="img/skoda.png" alt="Car" className="max-w-full h-auto" />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.3 }}
+                        className="glass-panel flex flex-col gap-8 absolute top-1/4 -left-56 transform -translate-y-1/4 bg-white bg-opacity-20 rounded-2xl p-8 w-96 h-4/5 backdrop-blur-md shadow-lg text-gray-800"
+                    >
                         <h1 className="text-2xl font-semibold">Spoľahlivá <span className='text-blue-600'>asistenčná</span> <span className='text-red-500'>služba</span> pri dopravnej nehode</h1>
                         <p>Každá situácia je jedinečná a preto poskytujeme riešenia šité na mieru Vašim potrebám.</p>
                         <a href="#contact">
@@ -25,7 +31,7 @@ const Homepage = () => {
                 </div>
             </div>
         </div>
-      );
+    );
 }
 
-export default Homepage
+export default Homepage;
