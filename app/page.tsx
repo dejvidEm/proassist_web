@@ -7,12 +7,14 @@ import Report from "@/components/Report";
 import Image from "next/image";
 import Questions from "@/components/Questions";
 import Contact from "@/components/Contact";
+import Statistics from "@/components/Statistics";
 
 export default function Home() {
   return (
     <div>
       <Header/>
       <Homepage/>
+      <Statistics/>
       <About/>
       <Report/>
       <Vehicles/>
