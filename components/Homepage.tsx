@@ -5,7 +5,7 @@ import React from 'react';
 const Homepage = () => {
     return (
         <div>
-            <div className="flex justify-center items-center  pt-40">
+            <div className="flex justify-center items-center pt-40">
                 <div className="relative flex items-center">
                     <motion.div
                         initial={{ x: 300, opacity: 0 }}  // Začína vpravo mimo obrazovku

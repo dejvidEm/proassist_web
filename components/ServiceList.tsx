@@ -2,12 +2,12 @@
 import { motion } from "framer-motion";
 
 const services = [
-  "24/7 Roadside Assistance",
-  "Towing Service",
-  "Battery Jumpstart",
+  "Asistenčná výjazdová služba priamo na mieste udalosti(nehoda, porucha)",
+  "Odťahovacia služba",
+  "Správa vozového parku",
   "Flat Tire Change",
-  "Fuel Delivery",
-  "Lockout Service",
+  "Náhradné vozidlá",
+  "Poistenie vozidiel",
 ];
 
 const listItemVariants = {
@@ -25,7 +25,7 @@ const ServiceList: React.FC = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-md mx-auto">
       <h2 className="text-2xl font-bold mb-4">Our Services</h2>
-      <ul className="space-y-2">
+      <ul className="space-y-2 list-disc mx-4">
         {services.map((service, index) => (
           <motion.li
             key={index}

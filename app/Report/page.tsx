@@ -39,6 +39,18 @@ const Report: React.FC = () => {
           V prípade nehody je dôležité mať pripravenú správu. Stiahnite si ju pomocou tlačidla nižšie.
         </motion.p>
 
+        <motion.a
+          className="text-lg mb-8 text-blue-600 underline"
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 0.3 }}
+          variants={textVariants}
+          href="/documents/sprava_o_nehode_vzor.pdf"
+          download
+        >
+          Vzor vyplnenej správy o nehode TU
+        </motion.a>
+
         {/* Tlačidlo na stiahnutie */}
         <motion.a
           href="/documents/sprava_o_nehode.pdf"  // predpokladáme, že dokument je v priečinku public/documents

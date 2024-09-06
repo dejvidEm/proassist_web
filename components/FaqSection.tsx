@@ -8,16 +8,16 @@ type FaqItem = {
 
 const faqData: FaqItem[] = [
   {
-    question: "What is your return policy?",
-    answer: "Our return policy allows you to return products within 30 days of purchase. Please ensure that the items are unused and in original packaging.",
+    question: "Koľko stojí výjazd asistenčnej služby?",
+    answer: "Asistenciu priamo na mieste nehody poskytujeme účastníkom bezplatne. Snažíme sa odbremeniť Vás od starostí spojených s riešením poistnej udalosti, opravou vozidla či odťahom",
   },
   {
-    question: "How do I track my order?",
-    answer: "You can track your order using the tracking number provided in the confirmation email. Simply click on the link and follow the instructions.",
+    question: "Kto hradí naše služby?",
+    answer: "Dlhoročne spolupráce s autorizovanými servismi umožňujú poskytnúť účastníkom dopravných nehôd službu bez poplatkov. Náklady na výjazd asistenčnej služby znáša servis.",
   },
   {
-    question: "Do you offer customer support?",
-    answer: "Yes, we offer 24/7 customer support. You can reach out to us via phone, email, or live chat on our website.",
+    question: "Koľko stojí odťah nepojazdného vozidla?",
+    answer: "V prípade potreby odťahovacej služby sa snažíme vždy kontaktovať asistenčnú službu príslušnej poisťovne a preverujeme nárok. Pokiaľ sa jedná o nutnosť odťahu bez možnosti využitia asistenčných služieb poisťovne, poskytujeme odťah podľa platného cenníka.",
   },
 ];
 
@@ -29,12 +29,12 @@ const FaqSection: React.FC = () => {
       <div className="relative flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden max-w-4xl w-full">
         {/* Left Card with Questions */}
         <div className="w-full md:w-1/2 bg-blue-100 p-6">
-          <h2 className="text-xl font-bold mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-xl font-bold mb-4">Často kladené otázky</h2>
           <div className="flex flex-col space-y-2">
             {faqData.map((item, index) => (
               <button
                 key={index}
-                className={`text-left p-4 rounded-md text-blue-800 hover:bg-blue-200 transition ${
+                className={`text-left p-4 rounded-md hover:bg-blue-200 transition ${
                   selectedQuestion === index ? "bg-blue-300" : "bg-blue-50"
                 }`}
                 onClick={() => setSelectedQuestion(index)}
@@ -47,7 +47,7 @@ const FaqSection: React.FC = () => {
 
         {/* Right Card with Answer */}
         <div className="w-full md:w-1/2 bg-white p-6 shadow-md mt-4 md:mt-0 md:absolute md:top-0 md:right-0 md:transform md:translate-x-4 md:translate-y-4 rounded-lg">
-          <h2 className="text-xl font-bold mb-4">Answer</h2>
+          <h2 className="text-xl font-bold mb-4">Odpoveď</h2>
           <p className="text-gray-700">{faqData[selectedQuestion].answer}</p>
         </div>
       </div>

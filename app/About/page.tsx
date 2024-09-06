@@ -14,7 +14,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4 pt-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Nadpis */}
         <motion.h1
@@ -29,7 +29,7 @@ const About: React.FC = () => {
 
         {/* Fotka */}
         <motion.img
-          src="https://via.placeholder.com/600x400"
+          src="img/skoda.png"
           alt="O nás"
           className="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0"
           initial="hidden"
@@ -46,9 +46,10 @@ const About: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           variants={textVariants}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
-          Cras venenatis euismod malesuada. Nam a dolor quis orci sodales suscipit. Sed euismod orci ut lectus tempor, 
-          a pretium magna congue.
+          Proassist s.r.o. je popredná spoločnosť, ktorá poskytuje rýchlu a spoľahlivú
+          asistenciu pri dopravných nehodách a krízových situáciach. Našim cieľom je pomôcť
+          našim klientom prekonať ťažké chvíle s minimálnym stresom a maximálnou podporou.
+          Sme tu pre Vás, aby sme Vám poskytli odborné rady, rýchle riešenie a osobný prístup.
         </motion.p>
       </div>
     </div>

@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import React from 'react';
 import { motion } from 'framer-motion';
 
+// Dáta pre náhradné vozidlá
 const vehiclesData = [
   {
     name: "Audi A4",
@@ -26,6 +27,7 @@ const vehiclesData = [
   },
 ];
 
+// Komponent pre stránku s náhradnými vozidlami
 const Vehicles: React.FC = () => {
   // Definícia animácií pre nadpis, text a karty
   const textVariants = {
@@ -39,9 +41,29 @@ const Vehicles: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4 pt-28">
       <div className="container mx-auto">
-        {/* Nadpis */}
+        {/* Sekcia o odťahovej službe */}
+        <motion.div
+          className="mb-12 text-center"
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5 }}
+          variants={textVariants}
+        >
+          <h1 className="text-4xl font-bold mb-4">Odťahová služba</h1>
+          <p className="text-lg text-gray-700 mb-4">
+            V prípade potreby odťahovky nás neváhajte kontaktovať. Sme tu pre vás 24/7, pripravení vám pomôcť.
+          </p>
+          <a
+            href="tel:+421900000000"
+            className="inline-block px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors"
+          >
+            Zavolať odťahovku
+          </a>
+        </motion.div>
+
+        {/* Nadpis pre náhradné vozidlá */}
         <motion.h1
           className="text-4xl font-bold mb-4 text-center"
           initial="hidden"
@@ -52,7 +74,7 @@ const Vehicles: React.FC = () => {
           Náhradné vozidlá
         </motion.h1>
 
-        {/* Krátky text */}
+        {/* Krátky text o náhradných vozidlách */}
         <motion.p
           className="text-lg text-gray-700 mb-8 text-center"
           initial="hidden"
@@ -77,7 +99,6 @@ const Vehicles: React.FC = () => {
               <img src={vehicle.image} alt={vehicle.name} className="w-full h-48 object-cover rounded-t-lg mb-4" />
               <h2 className="text-xl font-semibold mb-2">{vehicle.name}</h2>
               <p className="text-gray-600 mb-2">{vehicle.params}</p>
-              <p className="text-gray-800 font-bold mb-2">{vehicle.price}</p>
               <p className={`font-semibold ${vehicle.availability === "Dostupné" ? "text-green-500" : "text-red-500"}`}>
                 {vehicle.availability}
               </p>
