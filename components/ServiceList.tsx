@@ -24,7 +24,7 @@ const listItemVariants = {
 const ServiceList: React.FC = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-md mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Our Services</h2>
+      <h2 className="text-2xl font-bold mb-4 text-blue-900">Naše služby</h2>
       <ul className="space-y-2 list-disc mx-4">
         {services.map((service, index) => (
           <motion.li

@@ -5,14 +5,15 @@ import CountUp from 'react-countup';
 interface StatisticItem {
   title: string;
   value: number;
+  isCustomers?: boolean;  // Pridaný parameter pre prvý údaj
 }
 
 const Statistics: React.FC = () => {
   const data: StatisticItem[] = [
-    { title: 'Počet spokojných zákazníkov', value: 1030 },
-    { title: 'Počet úspešných výjazdov', value: 560 },
+    { title: 'Počet spokojných zákazníkov', value: 500, isCustomers: true },
+    { title: 'Počet úspešných výjazdov', value: 700, isCustomers: true },
     { title: 'Počet dostupných automobilov', value: 18 },
-    { title: 'Roky skúseností', value: 15 },
+    { title: 'Rokov skúseností', value: 15 },
   ];
 
   return (
@@ -20,7 +21,7 @@ const Statistics: React.FC = () => {
       {data.map((item, index) => (
         <div key={index}>
           <h2 style={styles.number}>
-            <CountUp start={0} end={item.value} duration={3.5} />
+            <CountUp start={0} end={item.value} duration={3.5} />{item.isCustomers ? '+' : ''}
           </h2>
           <p style={styles.title}>{item.title}</p>
         </div>

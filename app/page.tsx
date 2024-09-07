@@ -16,16 +16,13 @@ import Reviews from "@/components/Reviews";
 export default function Home() {
   return (
     <div>
-      {/*
       <Homepage/>
-      <ServiceList/>
       <Statistics/>
+      <ServiceList/>
       <Cards/>
       <Reviews/>
       <FaqSection/>
       <Contact/>
-      */}
-      <Maintnance/>
     </div>
   );
 }
