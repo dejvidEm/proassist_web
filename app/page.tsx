@@ -16,6 +16,8 @@ import Reviews from "@/components/Reviews";
 export default function Home() {
   return (
     <div>
+      <Maintnance/>
+      {/*
       <Homepage/>
       <Statistics/>
       <ServiceList/>
@@ -23,6 +25,7 @@ export default function Home() {
       <Reviews/>
       <FaqSection/>
       <Contact/>
+      */}
     </div>
   );
 }
