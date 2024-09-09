@@ -14,7 +14,7 @@ const insuranceData = [
   { name: "Genertel", phone: "+421 555 123 456", icon: "/img/po/g.png" },
   { name: "Komunálna", phone: "+421 555 123 456", icon: "/img/po/koop.png" },
   { name: "Union", phone: "+421 555 123 456", icon: "/img/po/union.png" },
-  { name: "Wustenrot", phone: "+421 555 123 456", icon: "/img/po/w.png" },
+  { name: "Wustenrot", phone: "+421 555 123 456", icon: "/img/po/wu.png" },
 ];
 
 const Insurance: React.FC = () => {
@@ -48,7 +48,7 @@ const Insurance: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           variants={textVariants}
         >
-          Tu nájdete kontaktné čísla na naše partnerské poisťovne. Kliknutím na číslo sa priamo spojíte s poisťovňou.
+          Tu nájdete kontaktné čísla na poisťovne v prípade potreby. Kliknutím na číslo sa priamo spojíte s poisťovňou.
         </motion.p>
 
         {/* Zoznam poisťovní v dvoch stĺpcoch */}

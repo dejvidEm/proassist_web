@@ -9,17 +9,17 @@ type CardData = {
 
 const cardsData: CardData[] = [
   {
-    image: "https://via.placeholder.com/400x300",
+    image: "/img/fotka_jedna.jpg",
     title: "Spokojnosť klientov",
-    text: "Vaša spokojnosť je vždy naša priorita",
+    text: "Vaša spokojnosť je vždy našou prioritou",
   },
   {
-    image: "https://via.placeholder.com/400x300",
+    image: "/img/photo_2.jpg",
     title: "Odborné riešenia",
     text: "Každá situácia si vyžaduje svoje vlastné riešenie",
   },
   {
-    image: "https://via.placeholder.com/400x300",
+    image: "/img/photo_3.jpg",
     title: "Rýchla pomoc",
     text: "Okamžite dostupný v prípade dopravnej nehody",
   },
@@ -27,8 +27,8 @@ const cardsData: CardData[] = [
 
 const CardsPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-2xl font-bold text-center mb-8">Cards Page</h1>
+    <div className="h-auto pb-28 bg-gray-100 p-8">
+      <h1 className="text-2xl font-bold text-center mb-8">Naše priority</h1>
       <div className="flex flex-wrap justify-center">
         {cardsData.map((card, index) => (
           <Card

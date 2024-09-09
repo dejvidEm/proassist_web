@@ -19,12 +19,12 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <Link href="/">
-                <img src="/img/logo.jpg" className="h-4 md:h-8" alt="Logo" />
+                <img src="/img/logo_new.png" className="h-7 md:h-8" alt="Logo" />
             </Link>
         </div>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a href="tel:+421911551556">
-            <button type="button" className="text-gray-900 hover:text-white border-2 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2 md:py-2.5 text-center me-2 mb-2 dark:border-gray-600">Zavolajte Nám</button>
+            <button type="button" className="text-gray-900 hover:text-white border-2 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2 md:py-2.5 text-center me-2 mb-2 hidden lg:block dark:border-gray-600">Zavolajte Nám</button>
           </a>
           <button
             onClick={toggleNavbar}
@@ -52,6 +52,9 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <a href="tel:+421911551556">
+            <button type="button" className="text-gray-900 hover:text-white border-2 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2 md:py-2.5 mt-4 text-center me-2 mb-2 block md:hidden dark:border-gray-600">Zavolajte Nám</button>
+          </a>
         </div>
       </div>
     </nav>

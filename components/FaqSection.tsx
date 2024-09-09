@@ -25,7 +25,7 @@ const FaqSection: React.FC = () => {
   const [selectedQuestion, setSelectedQuestion] = useState<number>(0);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8 flex justify-center items-center">
+    <div className="h-auto py-28 bg-gray-100 p-8 flex justify-center items-center">
       <div className="relative flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden max-w-4xl w-full">
         {/* Left Card with Questions */}
         <div className="w-full md:w-1/2 bg-blue-100 p-6">
