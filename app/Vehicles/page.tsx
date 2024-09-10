@@ -5,24 +5,10 @@ import { motion } from 'framer-motion';
 // Dáta pre náhradné vozidlá
 const vehiclesData = [
   {
-    name: "Audi A4",
-    image: "img/audi_a4.jpg",
+    name: "Škoda Fabia Monte Carlo",
+    image: "img/car_rent.jpg",
     params: "Benzín, Automat, 5 miest",
-    price: "50€/deň",
-    availability: "Dostupné",
-  },
-  {
-    name: "BMW 3",
-    image: "img/audi_a4.jpg",
-    params: "Diesel, Manuál, 5 miest",
-    price: "60€/deň",
-    availability: "Nedostupné",
-  },
-  {
-    name: "Škoda Octavia",
-    image: "img/audi_a4.jpg",
-    params: "Benzín, Manuál, 5 miest",
-    price: "40€/deň",
+    price: "20€/deň",
     availability: "Dostupné",
   },
 ];
