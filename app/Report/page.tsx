@@ -55,7 +55,7 @@ const Report: React.FC = () => {
         <motion.a
           href="/documents/sprava_o_nehode.pdf"  // predpokladáme, že dokument je v priečinku public/documents
           download
-          className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600"
+          className="rounded-full bg-navy-700 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-gray-500 bg-gray-800 "
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.5, delay: 0.6 }}

@@ -14,7 +14,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4 pt-20">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Nadpis */}
         <motion.h1
@@ -29,13 +29,14 @@ const About: React.FC = () => {
 
         {/* Fotka */}
         <motion.img
-          src="img/skoda.png"
+          src="img/logo_main.png"
           alt="O nás"
-          className="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0"
+          className="w-full md:w-1/2 rounded-lg mb-6 md:mb-0"
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.5, delay: 0.3 }}
           variants={imageVariants}
+          loading="lazy"
         />
 
         {/* Text */}

@@ -6,21 +6,21 @@ import { motion } from 'framer-motion';
 const vehiclesData = [
   {
     name: "Audi A4",
-    image: "https://via.placeholder.com/400x300",
+    image: "img/audi_a4.jpg",
     params: "Benzín, Automat, 5 miest",
     price: "50€/deň",
     availability: "Dostupné",
   },
   {
     name: "BMW 3",
-    image: "https://via.placeholder.com/400x300",
+    image: "img/audi_a4.jpg",
     params: "Diesel, Manuál, 5 miest",
     price: "60€/deň",
     availability: "Nedostupné",
   },
   {
     name: "Škoda Octavia",
-    image: "https://via.placeholder.com/400x300",
+    image: "img/audi_a4.jpg",
     params: "Benzín, Manuál, 5 miest",
     price: "40€/deň",
     availability: "Dostupné",
@@ -52,12 +52,12 @@ const Vehicles: React.FC = () => {
           variants={textVariants}
         >
           <h1 className="text-4xl font-bold mb-4">Odťahová služba</h1>
-          <p className="text-lg text-gray-700 mb-4">
+          <p className="text-lg text-gray-700 mb-4 md:mb-8">
             V prípade potreby odťahovky nás neváhajte kontaktovať. Sme tu pre vás 24/7, pripravení vám pomôcť.
           </p>
           <a
             href="tel:+421900000000"
-            className="inline-block px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors"
+            className="rounded-full bg-navy-700 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-gray-500 bg-gray-800 "
           >
             Zavolať odťahovku
           </a>
@@ -96,7 +96,7 @@ const Vehicles: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.6 + index * 0.2 }}
               variants={cardVariants}
             >
-              <img src={vehicle.image} alt={vehicle.name} className="w-full h-48 object-cover rounded-t-lg mb-4" />
+              <img src={vehicle.image} alt={vehicle.name} className="w-full h-48 object-cover rounded-t-lg mb-4" loading="lazy"/>
               <h2 className="text-xl font-semibold mb-2">{vehicle.name}</h2>
               <p className="text-gray-600 mb-2">{vehicle.params}</p>
               <p className={`font-semibold ${vehicle.availability === "Dostupné" ? "text-green-500" : "text-red-500"}`}>

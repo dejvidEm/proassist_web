@@ -7,29 +7,29 @@ const Footer = () => {
         <div className='flex flex-col md:flex-row justify-around items-start md:items-center'>
           {/* Navigation Links */}
           <div className='flex flex-col mb-6 md:mb-0'>
-            <h2 className='text-xl font-bold mb-4'>Kategorie</h2>
+            <h2 className='text-xl font-bold mb-4 underline underline-offset-2'>Kategorie</h2>
             <ul className='space-y-2 font-semibold'>
               <li>
-                <a href="#" className='hover:underline'>Domov</a>
+                <a href="/" className='hover:underline'>Domov</a>
               </li>
               <li>
-                <a href="#" className='hover:underline'>O Nás</a>
+                <a href="/About" className='hover:underline'>O Nás</a>
               </li>
               <li>
-                <a href="#" className='hover:underline'>Náhradné vozidlá</a>
+                <a href="/Vehicles" className='hover:underline'>Náhradné vozidlá</a>
               </li>
               <li>
-                <a href="#" className='hover:underline'>Správa o nehode</a>
+                <a href="/Report" className='hover:underline'>Správa o nehode</a>
               </li>
               <li>
-                <a href="#" className='hover:underline'>Čísla poisťovní</a>
+                <a href="/Numbers" className='hover:underline'>Čísla poisťovní</a>
               </li>
             </ul>
           </div>
 
           {/* Contact Information */}
           <div className='flex flex-col mb-6 md:mb-0'>
-            <h2 className='text-xl font-bold mb-4'>Kontaktné údaje</h2>
+            <h2 className='text-xl font-bold mb-4 underline underline-offset-2'>Kontaktné údaje</h2>
             <ul className='space-y-2 text-sm'>
               <li>
                 Telefon: <span className='font-semibold'>18 001</span>
@@ -61,10 +61,10 @@ const Footer = () => {
 
         {/* Social Media Links */}
         <div className='flex justify-center space-x-6 mt-6'>
-          <a href="https://www.facebook.com/yourprofile" className='text-white hover:text-blue-500'>
+          <a href="https://www.facebook.com/profile.php?id=61559304638830" className='text-white hover:text-blue-500'>
             <FaFacebookF size={20} />
           </a>
-          <a href="https://www.instagram.com/yourprofile" className='text-white hover:text-pink-500'>
+          <a href="https://www.instagram.com/proassist_s.r.o/" className='text-white hover:text-pink-500'>
             <FaInstagram size={20} />
           </a>
         </div>
@@ -72,7 +72,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className='border-t border-gray-700 mt-6 pt-4 text-center'>
           <p className='text-sm'>
-            &copy; {new Date().getFullYear()} <span className='text-blue-600'>ProAssist</span>. Všetky práva vyhradené.
+            &copy; {new Date().getFullYear()} <span className='text-blue-600'>ProAssist</span>. Všetky práva vyhradené. Chránené ochrannou známkou.
           </p>
         </div>
       </div>

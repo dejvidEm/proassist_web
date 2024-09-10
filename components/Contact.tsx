@@ -3,6 +3,8 @@ import React from 'react'
 import { motion } from 'framer-motion';
 
 import { CheckIcon, ChevronRightIcon } from "lucide-react";
+import { FaRegPaperPlane } from "react-icons/fa";
+
 
 import toast, { Toaster } from 'react-hot-toast';
 import Header from './Header';
@@ -19,8 +21,9 @@ export default function Contact() {
         <input name='email' type="email" required maxLength={500} placeholder='Váš email' className='mx-8 px-4 mx-auto w-[320px] sm:w-[400px] md:w-[800px] h-14 rounded-lg borderBlack dark:bg-white/80 focus:dark:bg-white/100 transition-all dark:outline-none border-2'/>
         <textarea name='message' placeholder='Vaša správa' className='h-52 mx-8 mx-auto w-[320px] sm:w-[400px] md:w-[800px] my-3 rounded-lg borderBlack p-4 dark:bg-white/80 focus:dark:bg-white/100 transition-all dark:outline-none border-2' required maxLength={5000}></textarea>
       </form>
-      <button className="rounded-full bg-navy-700 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-gray-800 bg-gray-900 ">
+      <button className="rounded-full bg-navy-700 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-gray-500 bg-gray-800 ">
     Odoslať správu
+    <FaRegPaperPlane size={22} className='inline-block ml-3'/>
     </button>
     </section>
   )

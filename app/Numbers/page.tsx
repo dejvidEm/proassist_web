@@ -3,18 +3,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const insuranceData = [
-  { name: "Allianz", phone: "+421 123 456 789", icon: "/img/po/alianz.png" },
-  { name: "Axa", phone: "+421 555 123 456", icon: "/img/po/axa.png" },
-  { name: "Uniqua", phone: "+421 555 123 456", icon: "/img/po/uniqua.png" },
-  { name: "Groupama", phone: "+421 555 123 456", icon: "/img/po/neviem.png" },
-  { name: "Generali", phone: "+421 987 654 321", icon: "/img/po/generali.png" },
-  { name: "Kooperativa", phone: "+421 555 123 456", icon: "/img/po/zelena.png" },
-  { name: "ČSOB", phone: "+421 555 123 456", icon: "/img/po/csob.png" },
-  { name: "Generali", phone: "+421 555 123 456", icon: "/img/po/generali.png" },
-  { name: "Genertel", phone: "+421 555 123 456", icon: "/img/po/g.png" },
-  { name: "Komunálna", phone: "+421 555 123 456", icon: "/img/po/koop.png" },
-  { name: "Union", phone: "+421 555 123 456", icon: "/img/po/union.png" },
-  { name: "Wustenrot", phone: "+421 555 123 456", icon: "/img/po/wu.png" },
+  { name: "Allianz", phone: "02/501 222 22", icon: "/img/po/alianz.png" },
+  { name: "Axa", phone: "02/292 929 29", icon: "/img/po/axa.png" },
+  { name: "Uniqua", phone: "02/326 001 00", icon: "/img/po/uniqua.png" },
+  { name: "Groupama", phone: "02/208 542 08", icon: "/img/po/neviem.png" },
+  { name: "Generali", phone: "02/381 111 17", icon: "/img/po/generali.png" },
+  { name: "Kooperativa", phone: "02/572 999 99", icon: "/img/po/zelena.png" },
+  { name: "ČSOB", phone: "0850 311 312", icon: "/img/po/csob.png" },
+  { name: "Genertel", phone: "0850 555 555", icon: "/img/po/g.png" },
+  { name: "Komunálna", phone: "0850 111 566", icon: "/img/po/koop.png" },
+  { name: "Union", phone: "0850 223 333", icon: "/img/po/union.png" },
+  { name: "Wustenrot", phone: "02/330 68805", icon: "/img/po/wu.png" },
 ];
 
 const Insurance: React.FC = () => {

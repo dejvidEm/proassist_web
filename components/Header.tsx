@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a href="tel:+421911551556">
-            <button type="button" className="text-gray-900 hover:text-white border-2 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2 md:py-2.5 text-center me-2 mb-2 hidden lg:block dark:border-gray-600">Zavolajte Nám</button>
+            <button type="button" className="rounded-full bg-navy-700 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-gray-500 bg-gray-800 ">Zavolajte Nám</button>
           </a>
           <button
             onClick={toggleNavbar}

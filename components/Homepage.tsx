@@ -5,7 +5,7 @@ import React from 'react';
 const Homepage = () => {
     return (
         <div>
-            <div className="flex justify-center items-center py-40 sm:py-20">
+            <div className="flex justify-center items-center py-40 sm:py-28">
                 <div className="relative flex items-center">
                     <motion.div
                         initial={{ x: 300, opacity: 0 }}  // Začína vpravo mimo obrazovku
@@ -38,6 +38,9 @@ const Homepage = () => {
                         </a>
                     </motion.div>
                 </div>
+            </div>
+            <div className='w-full h-auto'>
+                <p className='italic underline-offset-1 font-light text-md md:text-xl px-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-400'>„Každý dobrý servis zameraný na spokojnosť klienta, ponúkne vždy viac ako ostatní.“</p>
             </div>
         </div>
     );

@@ -1,4 +1,6 @@
 "use client"
+import { GrFormNext } from "react-icons/gr";
+import { GrFormPrevious } from "react-icons/gr";
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { reviews } from '../lib/data';
@@ -18,10 +20,11 @@ const Reviews: React.FC = () => {
     );
   };
 
-  const { name, rating, text } = reviews[currentIndex];
+  const { name, rating, text, date } = reviews[currentIndex];
   const transition = { duration: 0.5 };
 
   return (
+    <div className='w-full h-auto bg-gray-100'>
     <div className="relative w-full max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg flex flex-col items-center">
       <AnimatePresence initial={false} mode="wait">
         <motion.div
@@ -37,7 +40,7 @@ const Reviews: React.FC = () => {
               {[...Array(rating)].map((_, i) => (
                 <svg
                   key={i}
-                  className="w-5 h-5 text-yellow-500"
+                  className="w-7 h-7 text-yellow-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -45,6 +48,7 @@ const Reviews: React.FC = () => {
                 </svg>
               ))}
             </div>
+            <p className='text-gray-400 text-center text-sm pb-4'>{date}</p>
             <p className="font-semibold">{name}</p>
           </div>
           <p className="text-gray-600 text-center">{text}</p>
@@ -54,17 +58,18 @@ const Reviews: React.FC = () => {
       <div className="flex justify-between w-full mt-6">
         <button
           onClick={handlePrevClick}
-          className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none"
+          className="px-2 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none"
         >
-          {"<"}
+          <GrFormPrevious size={25}/>
         </button>
         <button
           onClick={handleNextClick}
-          className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none"
+          className="px-2 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none"
         >
-          {">"}
+          <GrFormNext size={25}/>
         </button>
       </div>
+    </div>
     </div>
   );
 };

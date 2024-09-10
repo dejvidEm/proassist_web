@@ -27,9 +27,9 @@ const cardsData: CardData[] = [
 
 const CardsPage: React.FC = () => {
   return (
-    <div className="h-auto pb-28 bg-gray-100 p-8">
+    <div className="transition-transform transform h-auto pb-28 bg-gray-100 p-8">
       <h1 className="text-2xl font-bold text-center mb-8">Naše priority</h1>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center gap-10">
         {cardsData.map((card, index) => (
           <Card
             key={index}
