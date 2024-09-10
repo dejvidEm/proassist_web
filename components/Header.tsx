@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a href="tel:+421911551556">
-            <button type="button" className="rounded-full bg-navy-700 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-gray-500 bg-gray-800 ">Zavolajte Nám</button>
+            <button type="button" className="rounded-full bg-navy-700 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-gray-500 bg-gray-800 hidden lg:block">Zavolajte Nám</button>
           </a>
           <button
             onClick={toggleNavbar}
@@ -39,7 +39,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`items-center justify-between ${isOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+          <ul className="flex flex-col font-medium p-4 mb-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
             {links.map((link, index) => (
               <li key={index}>
                 <Link
@@ -53,7 +53,7 @@ const Navbar = () => {
             ))}
           </ul>
           <a href="tel:+421911551556">
-            <button type="button" className="text-gray-900 hover:text-white border-2 border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2 md:py-2.5 mt-4 text-center me-2 mb-2 block md:hidden dark:border-gray-600">Zavolajte Nám</button>
+            <button type="button" className="rounded-full bg-navy-700 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-gray-500 bg-gray-800 block md:hidden">Zavolajte Nám</button>
           </a>
         </div>
       </div>
