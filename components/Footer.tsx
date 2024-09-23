@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className='bg-gray-800 text-white py-6'>
       <div className='container mx-auto px-4'>
-        <div className='flex flex-col md:flex-row justify-around items-start md:items-center'>
+        <div className='flex flex-col md:flex-row justify-around items-start md:items-start pb-8'>
           {/* Navigation Links */}
           <div className='flex flex-col mb-6 md:mb-0'>
             <h2 className='text-xl font-bold mb-4 underline underline-offset-2'>Kategorie</h2>
@@ -57,15 +57,60 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          {/* Legal Information */}
+          <div className='flex flex-col mb-6 md:mb-0'>
+            <h2 className='text-xl font-bold mb-4 underline underline-offset-2'>Právne Informácie</h2>
+            <ul className='space-y-2 font-semibold'>
+              <li>
+                <a
+                  href="/documents/zasady_spracovania_ou.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className='hover:underline'
+                >
+                  Zásady spracovania os. údajov
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/documents/namietanie_spracovania_ou.pdf"
+                  download
+                  className='hover:underline'
+                >
+                  Namietanie spracovania os. údajov
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/documents/odvolanie_suhlasu.pdf"
+                  download
+                  className='hover:underline'
+                >
+                  Odvolanie súhlasu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/documents/cookies.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className='hover:underline'
+                >
+                  Používanie cookies
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Social Media Links */}
-        <div className='flex justify-center space-x-6 mt-6'>
-          <a href="https://www.facebook.com/profile.php?id=61559304638830" className='text-white hover:text-blue-500'>
-            <FaFacebookF size={20} />
+        <div className='flex justify-center space-x-14 mt-6'>
+          <a href="https://www.facebook.com/profile.php?id=61559304638830" className='text-white hover:text-blue-500 flex flex-row gap-2 items-center justify-center'>
+            <FaFacebookF size={30} />Facebook
           </a>
-          <a href="https://www.instagram.com/proassist_s.r.o/" className='text-white hover:text-pink-500'>
-            <FaInstagram size={20} />
+          <a href="https://www.instagram.com/proassist_s.r.o/" className='text-white hover:text-pink-500 flex flex-row gap-2 items-center justify-center'>
+            <FaInstagram size={30} />Instagram
           </a>
         </div>
 

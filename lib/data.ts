@@ -15,6 +15,10 @@ export const links = [
       hash: "/Report",
     },
     {
+      name: "Novinky",
+      hash: "/Activity",
+    },
+    {
       name: "Čísla poisťovní",
       hash: "/Numbers",
       },

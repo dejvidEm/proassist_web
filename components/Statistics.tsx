@@ -10,9 +10,9 @@ interface StatisticItem {
 
 const Statistics: React.FC = () => {
   const data: StatisticItem[] = [
-    { title: 'Počet spokojných zákazníkov', value: 500, isCustomers: true },
-    { title: 'Počet úspešných výjazdov', value: 700, isCustomers: true },
-    { title: 'Počet dostupných automobilov', value: 18 },
+    { title: 'Počet spokojných zákazníkov', value: 1500, isCustomers: true },
+    { title: 'Počet úspešných výjazdov', value: 2000, isCustomers: true },
+    { title: 'Počet dostupných automobilov', value: 50 },
     { title: 'Rokov skúseností', value: 15 },
   ];
 
