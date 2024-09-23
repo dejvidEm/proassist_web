@@ -61,37 +61,14 @@ const Aktuality = () => {
         >
           Tu nájdete najnovšie aktuality a správy.
         </motion.p>
-
-        <div className="w-full max-w-4xl mx-auto">
-          {news.map(({ id, title, description, date, image, fullText }) => (
-            <motion.div
-              key={id}
-              className={`flex flex-col sm:flex-row items-start p-4 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out mb-4 ${
-                expandedCard === id ? 'h-auto' : 'h-32 overflow-hidden'
-              }`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            >
-              {(expandedCard === id || isWideScreen) ? ( // Zobrazí obrázok, ak je karta rozšírená alebo na väčšej obrazovke
-                <img src={image} alt={title} className={`w-full sm:w-1/4 h-auto mb-4 sm:mb-0 rounded-lg ${expandedCard === id ? '' : 'object-cover h-full'}`} />
-              ) : null}
-              <div className="flex-grow px-4">
-                <h2 className="text-xl font-semibold">{title}</h2>
-                <p className="text-gray-700">{expandedCard === id ? fullText : description}</p>
-                <div className="flex justify-between items-center mt-4">
-                  <span className="text-gray-500 text-sm">{date}</span>
-                  <button
-                    onClick={() => toggleExpand(id)}
-                    className="text-blue-500 hover:underline focus:outline-none"
-                  >
-                    {expandedCard === id ? 'Zbaliť' : 'Čítať viac'}
-                  </button>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        <motion.p
+          className="text-lg text-gray-700 mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          Pripravuje sa..
+        </motion.p>
       </div>
     </div>
   );
