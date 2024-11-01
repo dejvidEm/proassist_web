@@ -12,10 +12,12 @@ import Cards from "@/components/Cards";
 import FaqSection from "@/components/FaqSection";
 import ServiceList from "@/components/ServiceList";
 import Reviews from "@/components/Reviews";
+import CookieBanner from "@/components/CookieBanner";
 
 export default function Home() {
   return (
     <div>
+      <CookieBanner/>
       <Homepage/>
       <Statistics/>
       <ServiceList/>
