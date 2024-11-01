@@ -23,6 +23,7 @@ export default function CookieBanner() {
         Tento web používa cookies na zlepšenie služieb. Pokračovaním súhlasíte s ich
         používaním.
       </p>
+      <p className='text-sm text-gray-600 my-2'>Právne informácie a informácie o zbierných cookies nájdete v pripnutých súboroch v päte webu</p>
       <button onClick={handleAccept} className="my-4 bg-blue-500 text-white px-4 py-2 rounded">
         Súhlasím
       </button>
