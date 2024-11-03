@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const insuranceData = [
   { name: "Allianz", phone: "02/501 222 22", icon: "/img/po/alianz.png" },
   { name: "Axa", phone: "02/292 929 29", icon: "/img/po/axa.png" },
-  { name: "Uniqua", phone: "02/326 001 00", icon: "/img/po/uniqua.png" },
+  { name: "Uniqa", phone: "02/326 001 00", icon: "/img/po/uniqua.png" },
   { name: "Groupama", phone: "02/208 542 08", icon: "/img/po/neviem.png" },
   { name: "Generali", phone: "02/381 111 17", icon: "/img/po/generali.png" },
   { name: "Kooperativa", phone: "02/572 999 99", icon: "/img/po/zelena.png" },
