@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import axios from "axios";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const placeId = "ChIJNdOn9ImJbEcRuV1ohYHVVIw"; // ID vašej firmy na Google
+  const placeId = "ChIJNdOn9ImJbEcRuV1ohYHVVIw"; // google api ID
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 
   try {
